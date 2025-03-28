@@ -1,20 +1,30 @@
-<<<<<<< HEAD
-# Global_Groupware_Assignment
-=======
-<<<<<<< HEAD
-# Global_Groupware_Assignment
-=======
-# React + Vite
+# 🛠️ User Management App (React + Axios + React Router)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple **User Management App** built with **React.js**, **Axios**, and **React Router Dom**.  
+This app includes **Login Authentication** and a **User List with CRUD Operations** using the `reqres.in` API.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 Features
 
-## Expanding the ESLint configuration
+✅ **User Authentication (Login & Token-based Routing)**  
+✅ **Protected Routes** (Only logged-in users can access the `/users` page)  
+✅ **Fetch Users from API**  
+✅ **Add a New User**  
+✅ **Edit User Details**  
+✅ **Delete a User**  
+✅ **Responsive & Minimal UI**
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
->>>>>>> 1bfd350 (assignment done)
->>>>>>> 51d93ac (assignment done)
+---
+
+## 🚀 Tech Stack
+
+- **React.js** (Component-based UI)
+- **React Router Dom** (Navigation & Protected Routes)
+- **Axios** (API Requests)
+- **CSS Modules** (Scoped Styling)
+- **LocalStorage** (Token Storage)
+
+---
+
+
