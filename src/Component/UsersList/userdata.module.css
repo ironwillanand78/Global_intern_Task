@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.userData {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid black;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.userData ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.userCard {
+    list-style: none;
+    padding: 15px;
+    border-bottom: 1px solid black;
+    width: 90%;
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.buttonGroup {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.editBtn, .deleteBtn, .addBtn, .updateBtn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.editBtn {
+    background-color: #007bff;
+}
+
+.deleteBtn {
+    background-color: #dc3545;
+}
+
+.addBtn {
+    background-color: #28a745;
+    margin-top: 10px;
+}
+
+.updateBtn {
+    background-color: #ffc107;
+    margin-top: 10px;
+}
+
+.formSection {
+    width: 75%;
+    padding: 20px;
+}
+
+.formSection h2 {
+    margin-bottom: 15px;
+}
+
+.formSection input {
+    display: block;
+    width: 60%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
