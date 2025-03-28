@@ -98,8 +98,8 @@ Feel free to submit a **pull request** if you want to improve this project! 🎯
 ## 📞 Contact
 
 💡 **Developer:** Anand Kumar Ojha  
-📧 **Email:** your-email@example.com  
-🔗 **LinkedIn:** [your-linkedin](www.linkedin.com/in/anand-ojha-9a2250268)  
+ 
+🔗 **LinkedIn:** [My-linkedin](www.linkedin.com/in/anand-ojha-9a2250268)  
 
 ---
 
