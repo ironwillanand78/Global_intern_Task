@@ -9,6 +9,7 @@
     height: 100vh;
 }
 
+/* Left Sidebar */
 .userData {
     width: 25%;
     height: 100%;
@@ -18,6 +19,7 @@
     border-right: 1px solid black;
     padding: 20px;
     background-color: #f8f8f8;
+    overflow-y: auto;  /* Scroll allow for long lists */
 }
 
 .userData ul {
@@ -52,14 +54,16 @@
     justify-content: center;
     gap: 10px;
     margin-top: 10px;
+    flex-wrap: wrap; /* Buttons won't overflow on small screens */
 }
 
 .editBtn, .deleteBtn, .addBtn, .updateBtn {
-    padding: 5px 10px;
+    padding: 8px 12px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     color: white;
+    font-size: 14px;
 }
 
 .editBtn {
@@ -80,9 +84,11 @@
     margin-top: 10px;
 }
 
+/* Form Section */
 .formSection {
     width: 75%;
     padding: 20px;
+    overflow-y: auto; /* Scroll allow if needed */
 }
 
 .formSection h2 {
@@ -91,9 +97,63 @@
 
 .formSection input {
     display: block;
-    width: 60%;
+    width: 100%;
+    max-width: 400px; /* Maintain good UI on larger screens */
     padding: 10px;
     margin: 5px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
+}
+
+/* 🔹 Responsive Design */
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .userData {
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid black;
+        padding: 15px;
+    }
+
+    .formSection {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .userCard {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .userData ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .userCard {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .formSection input {
+        width: 100%;
+        max-width: none;
+    }
+
+    .buttonGroup {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .editBtn, .deleteBtn, .addBtn, .updateBtn {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+    }
 }
